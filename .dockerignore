@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+.idea/
+.vscode/
+
+readme.md
+
+.git
+.gitignore
+
+.dockerignore
+Dockerfile
