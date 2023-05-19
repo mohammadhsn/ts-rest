@@ -1,12 +1,14 @@
 {
-  "name": "jest-playground",
+  "name": "ts-rest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Just a simple restful webservice witten with typescript.",
+  "main": "src/server.ts",
   "scripts": {
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
