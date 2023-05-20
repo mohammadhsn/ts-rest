@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  pg:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: pg
+      POSTGRES_PASSWORD: pg
+      POSTGRES_DB: service
+
+    ports:
+      - "5432:5432"
+
+  pg_web:
+    restart: always
+    image: sosedoff/pgweb
+    ports:
+      - "8081:8081"
+    environment:
+      - DATABASE_URL=postgres://pg:pg@pg:5432/service?sslmode=disable
