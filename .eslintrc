@@ -8,7 +8,10 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
   ],
+  "ignorePatterns": [
+    "jest.config.js"
+  ],
   "rules": {
-    "indent": "error"
+    "semi": "warn"
   }
 }
